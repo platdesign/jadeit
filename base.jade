@@ -1,14 +1,32 @@
 include mixins
 
+
+- var page = {og:{}};
+mixin setPage(attrs)
+	- for(var i in attrs) {
+	- page[i] = attrs[i]
+	- }
+block base
+	
+
+
 doctype html
 html
 	head
-		title
 		block head
+			meta(charset="utf-8")
+			meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+			meta(name="viewport", content="width=device-width, initial-scale=1")
+			
+			title= page.title
+			+page-meta(page)
+
+			block head-js
+			block head-css
 
 
 	body
 		block body
 		
 
-		block body-script
+	block page-footer

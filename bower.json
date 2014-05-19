@@ -1,0 +1,24 @@
+{
+  "name": "jadeit",
+  "version": "0.0.2",
+  "homepage": "https://github.com/platdesign/jadeit",
+  "authors": [
+    "Christian Blaschke <mail@platdesign.de>"
+  ],
+  "description": "jade boilerplate and mixins",
+  "main": "base.jade",
+  "keywords": [
+    "jade",
+    "html",
+    "mixins"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ]
+}

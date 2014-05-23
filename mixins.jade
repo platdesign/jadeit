@@ -50,7 +50,7 @@ mixin page-meta(page)
 	+og-meta('site_name', page.og.site_name || page.site_name)
 	+og-meta('description', page.og.description || page.description)
 	+og-meta('image', page.og.image)
-	+og-meta('url', page.url)
+	+og-meta('url', page.og.url || page.url)
 	+og-meta('type', page.type)
 
 

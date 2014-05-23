@@ -1,0 +1,19 @@
+{
+  "name": "jadeit",
+  "version": "0.0.1",
+  "description": "jade mixins and base-file",
+  "main": "base.jade",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/platdesign/jadeit.git"
+  },
+  "author": "mail@platdesign.de",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/platdesign/jadeit/issues"
+  },
+  "homepage": "https://github.com/platdesign/jadeit"
+}

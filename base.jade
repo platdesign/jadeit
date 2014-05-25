@@ -21,9 +21,12 @@ html
 			title= page.title
 			+page-meta(page)
 
+			+conditionalComment('if lt IE 9')
+				+js("http://html5shiv.googlecode.com/svn/trunk/html5.js")
+
+
 			block head-js
 			block head-css
-
 
 	body
 		block body

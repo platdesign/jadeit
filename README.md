@@ -54,3 +54,11 @@ and following og-meta-tags:
 - image
 - url
 - type
+
+
+
+
+
+
+
+[![Analytics](https://ga-beacon.appspot.com/UA-54136231-1/jadeid/readme)](https://github.com/igrigorik/ga-beacon)

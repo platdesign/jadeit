@@ -31,27 +31,3 @@ mixin browsehappy
 			|  to improve your experience.
 
 
-
-mixin og-meta(key, val)
-	if val
-		meta(property="og:" + key, content=val)
-
-
-mixin meta(key, val)
-	if val
-		meta(name=key, content=val)
-
-
-mixin page-meta(page)
-	+meta('description', page.description)
-	+meta('author', page.author)
-	+meta('keywords', page.keywords)
-	+og-meta('title', page.og.title || page.title)
-	+og-meta('site_name', page.og.site_name || page.site_name)
-	+og-meta('description', page.og.description || page.description)
-	+og-meta('image', page.og.image)
-	+og-meta('url', page.og.url || page.url)
-	+og-meta('type', page.type)
-
-
-

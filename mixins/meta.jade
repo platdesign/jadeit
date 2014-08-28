@@ -1,0 +1,44 @@
+
+mixin og-meta(key, val)
+	if val
+		meta(property="og:" + key, content=val)
+
+
+mixin meta(key, val)
+	if val
+		meta(name=key, content=val)
+
+
+mixin page-meta(page)
+	if page.description
+		+meta('description', page.description)
+	if page.author
+		+meta('author', page.author)
+	if page.keywords
+		+meta('keywords', page.keywords)
+	+og-meta('title', page.og.title || page.title)
+	+og-meta('site_name', page.og.site_name || page.site_name)
+	+og-meta('description', page.og.description || page.description)
+	+og-meta('image', page.og.image)
+	+og-meta('url', page.og.url || page.url)
+	+og-meta('type', page.type)
+
+
+
+
+
+
+
+
+
+
+
+mixin meta-description(desc)
+	+meta('description', desc)
+	+og-meta('description', desc)
+
+
+mixin meta-title(title)
+	title= title
+	+og-meta('title', title)
+

@@ -9,9 +9,9 @@ Creates the Google-Analytics-Code of an `ID` and `Domainname`.
 
 
 
-**+js(** *jsFile* **)**
+**+js(** *jsFile* **,** *async* **)**
 
-	<script src="[jsFile]"></script>
+	<script src="[jsFile]" [async]></script>
 
 
 	
